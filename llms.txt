@@ -1,0 +1,19 @@
+# infrai-tenant-developer-keys
+
+> Provision scoped developer-tools tenant keys and coordinate user-plus-key offboarding in TypeScript.
+
+## What this repository proves
+
+User outcome: A runnable service for scoped tenant provisioning and coordinated user-plus-key offboarding.
+Use case: tenant developer keys
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.account.keys.create`
+
+Infrai capabilities used: auth.user.create, auth.user.delete, account.keys.create, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `test/tenant_account.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

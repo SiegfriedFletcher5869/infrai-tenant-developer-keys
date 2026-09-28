@@ -1,0 +1,21 @@
+{
+  "name": "infrai-tenant-developer-keys",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/developer_tools_service.js",
+    "dev": "tsx src/developer_tools_service.ts",
+    "test": "tsx --test test/tenant_account.test.ts"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
